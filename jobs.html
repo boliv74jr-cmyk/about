@@ -21,64 +21,44 @@
     <a href="contact.html">Contact</a>
   </div>
 
-  <section class="timeline-section">
-  <h2 class="section-title">My Journey</h2>
-
 <section class="timeline-section">
   <h2 class="section-title">My Journey</h2>
 
   <div class="timeline">
-
-    <div class="timeline-item" onclick="openInfo('info1')">
+    <div class="timeline-item" onclick="toggleInfo(this)">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h3>2023 — Started Lophean</h3>
-        <p>Click to learn more.</p>
+        <p>Click to expand.</p>
+        <div class="extra-info">
+          <p>In 2023, I began developing Lophean — my first luxury ocean-tech brand website. I focused on clean design, ocean gradients, and interactive experiences.</p>
+        </div>
       </div>
     </div>
 
-    <div class="timeline-item" onclick="openInfo('info2')">
+    <div class="timeline-item" onclick="toggleInfo(this)">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h3>2024 — Expanded Projects</h3>
-        <p>Click to learn more.</p>
+        <p>Click to expand.</p>
+        <div class="extra-info">
+          <p>In 2024, I created multiple interactive product and game pages, added cart logic, and refined animations for a professional, fluid feel.</p>
+        </div>
       </div>
     </div>
 
-    <div class="timeline-item" onclick="openInfo('info3')">
+    <div class="timeline-item" onclick="toggleInfo(this)">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h3>2025 — Future Vision</h3>
-        <p>Click to learn more.</p>
+        <p>Click to expand.</p>
+        <div class="extra-info">
+          <p>In 2025, I plan to integrate backend systems so users can log in, save progress, and experience personalized, data-driven designs.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Pop-up Boxes -->
-<div id="info1" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closeInfo('info1')">&times;</span>
-    <h2>2023 — Started Lophean</h2>
-    <p>In 2023, I began developing Lophean, my first professional website built around the “luxury ocean-tech” concept. I focused on UI, gradient styles, and brand identity.</p>
-  </div>
-</div>
-
-<div id="info2" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closeInfo('info2')">&times;</span>
-    <h2>2024 — Expanded Projects</h2>
-    <p>During 2024, I created multiple interactive experiences, implemented cart logic, and refined the design system across Lophean’s ecosystem.</p>
-  </div>
-</div>
-
-<div id="info3" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closeInfo('info3')">&times;</span>
-    <h2>2025 — Future Vision</h2>
-    <p>My goal for 2025 is to integrate backend memory, user accounts, and advanced animations for a fully dynamic experience.</p>
-  </div>
-</div>
 
 
 
