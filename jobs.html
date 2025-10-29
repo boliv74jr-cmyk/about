@@ -24,32 +24,62 @@
   <section class="timeline-section">
   <h2 class="section-title">My Journey</h2>
 
+<section class="timeline-section">
+  <h2 class="section-title">My Journey</h2>
+
   <div class="timeline">
-    <div class="timeline-item">
+
+    <div class="timeline-item" onclick="openInfo('info1')">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h3>2023 — Started Lophean</h3>
-        <p>Began developing my first professional website focusing on luxury ocean-tech design.</p>
+        <p>Click to learn more.</p>
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item" onclick="openInfo('info2')">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h3>2024 — Expanded Projects</h3>
-        <p>Created multiple interactive web experiences, from games to product pages with cart logic.</p>
+        <p>Click to learn more.</p>
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item" onclick="openInfo('info3')">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h3>2025 — Future Vision</h3>
-        <p>Integrating backend memory, user accounts, and new creative digital experiences.</p>
+        <p>Click to learn more.</p>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Pop-up Boxes -->
+<div id="info1" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeInfo('info1')">&times;</span>
+    <h2>2023 — Started Lophean</h2>
+    <p>In 2023, I began developing Lophean, my first professional website built around the “luxury ocean-tech” concept. I focused on UI, gradient styles, and brand identity.</p>
+  </div>
+</div>
+
+<div id="info2" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeInfo('info2')">&times;</span>
+    <h2>2024 — Expanded Projects</h2>
+    <p>During 2024, I created multiple interactive experiences, implemented cart logic, and refined the design system across Lophean’s ecosystem.</p>
+  </div>
+</div>
+
+<div id="info3" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeInfo('info3')">&times;</span>
+    <h2>2025 — Future Vision</h2>
+    <p>My goal for 2025 is to integrate backend memory, user accounts, and advanced animations for a fully dynamic experience.</p>
+  </div>
+</div>
+
 
 
   <script src="script.js"></script>
