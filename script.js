@@ -32,4 +32,14 @@ window.onclick = function(event) {
     }
   });
 }
+function toggleInfo(item) {
+  // collapse others if you want only one open
+  document.querySelectorAll('.timeline-item').forEach(i => {
+    if (i !== item) i.classList.remove('active');
+  });
+  
+  // toggle the clicked one
+  item.classList.toggle('active');
+}
+
 
