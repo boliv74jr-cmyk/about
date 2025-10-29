@@ -259,5 +259,33 @@ ul {
     opacity: 1;
   }
 }
+.timeline-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  box-shadow: 0 10px 30px rgba(0, 198, 255, 0.15);
+}
+
+/* Hidden info box */
+.extra-info {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* Expanded state */
+.timeline-item.active .extra-info {
+  max-height: 300px; /* enough space for text */
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.timeline-item.active .timeline-content {
+  background: rgba(10, 22, 48, 0.9);
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.1);
+}
 
 
