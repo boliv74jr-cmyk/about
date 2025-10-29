@@ -118,5 +118,20 @@ ul {
     padding: 25px;
   }
 }
+.contact-info {
+  display: flex;
+  justify-content: space-between; /* space them apart */
+  align-items: center;
+  gap: 40px; /* spacing between them */
+  margin-top: 10px;
+}
 
+.contact-info p {
+  margin: 0;
+  color: #eef3f8;
+  font-size: 18px;
+}
 
+.email strong, .phone strong {
+  color: #8f7cff; /* your purple accent */
+}
