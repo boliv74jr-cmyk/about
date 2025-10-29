@@ -15,3 +15,21 @@ arrow.addEventListener('click', () => {
     menuBtn.style.display = 'flex';
   }, 300); // wait until animation ends
 });
+function openInfo(id) {
+  document.getElementById(id).style.display = 'flex';
+}
+
+function closeInfo(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+// Close popup if user clicks outside
+window.onclick = function(event) {
+  const popups = document.querySelectorAll('.popup');
+  popups.forEach(popup => {
+    if (event.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+}
+
