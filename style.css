@@ -135,3 +135,10 @@ ul {
 .email strong, .phone strong {
   color: #8f7cff; /* your purple accent */
 }
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+
