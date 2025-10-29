@@ -145,5 +145,58 @@ ul {
 .email strong, .phone strong {
   color: #8f7cff; /* your purple accent */
 }
+.timeline-section {
+  margin: 80px auto;
+  max-width: 800px;
+  color: #eef3f8;
+  padding: 0 20px;
+}
 
+.timeline {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 3px solid rgba(0, 224, 255, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #00E0FF, #7B61FF);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.5);
+}
+
+.timeline-content {
+  background: rgba(10, 22, 48, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 198, 255, 0.15);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #00E0FF;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+  color: #eef3f8;
+  line-height: 1.6;
+}
 
