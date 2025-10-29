@@ -120,10 +120,20 @@ ul {
 }
 .contact-info {
   display: flex;
-  justify-content: space-between; /* space them apart */
+  justify-content: space-between;
   align-items: center;
-  gap: 40px; /* spacing between them */
   margin-top: 10px;
+  position: relative;
+}
+
+.email {
+  flex: 1;
+  text-align: left;
+}
+
+.phone {
+  flex: 1;
+  text-align: center;
 }
 
 .contact-info p {
@@ -134,11 +144,6 @@ ul {
 
 .email strong, .phone strong {
   color: #8f7cff; /* your purple accent */
-}
-.contact-info {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
 }
 
 
